@@ -32,7 +32,7 @@
    <bool>false</bool>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -43,7 +43,7 @@
     </property>
     <layout class="QGridLayout" name="gridLayout">
      <item row="0" column="0" rowspan="10">
-      <widget class="QTextEdit" name="textEdit">
+      <widget class="QTextEdit" name="note">
        <property name="html">
         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -86,17 +86,17 @@ p, li { white-space: pre-wrap; }
       </widget>
      </item>
      <item row="1" column="2" colspan="4">
-      <widget class="QListWidget" name="listWidget_2"/>
+      <widget class="QListWidget" name="notes"/>
      </item>
      <item row="2" column="2" colspan="3">
-      <widget class="QPushButton" name="pushButton_10">
+      <widget class="QPushButton" name="create_note">
        <property name="text">
         <string>Создать заметку</string>
        </property>
       </widget>
      </item>
      <item row="2" column="5">
-      <widget class="QPushButton" name="pushButton_9">
+      <widget class="QPushButton" name="delete_note">
        <property name="text">
         <string>Удалить заметку</string>
        </property>
@@ -110,38 +110,38 @@ p, li { white-space: pre-wrap; }
       </widget>
      </item>
      <item row="5" column="2" colspan="4">
-      <widget class="QListWidget" name="listWidget"/>
+      <widget class="QListWidget" name="tegs"/>
      </item>
      <item row="8" column="2" colspan="3">
-      <widget class="QPushButton" name="pushButton_7">
+      <widget class="QPushButton" name="add_to_note">
        <property name="text">
         <string>Добавить к заметке</string>
        </property>
       </widget>
      </item>
      <item row="8" column="5">
-      <widget class="QPushButton" name="pushButton_8">
+      <widget class="QPushButton" name="unpin_from_note">
        <property name="text">
         <string>Открепить от заметки</string>
        </property>
       </widget>
      </item>
      <item row="9" column="2" colspan="4">
-      <widget class="QPushButton" name="pushButton_3">
+      <widget class="QPushButton" name="find_teg">
        <property name="text">
         <string>Искать заметку по тегу</string>
        </property>
       </widget>
      </item>
      <item row="3" column="2" colspan="4">
-      <widget class="QPushButton" name="pushButton_4">
+      <widget class="QPushButton" name="save_note">
        <property name="text">
         <string>Сохранить заметку</string>
        </property>
       </widget>
      </item>
      <item row="7" column="2" colspan="4">
-      <widget class="QLineEdit" name="lineEdit"/>
+      <widget class="QLineEdit" name="teg_input"/>
      </item>
      <item row="6" column="2">
       <widget class="QLabel" name="label_3">
