@@ -9,10 +9,12 @@ class mywindow(QtWidgets.QMainWindow):
         super(mywindow, self).__init__()
         self.ui = ui_main.Ui_MainWindow()
         self.ui.setupUi(self)
+        button.clicked.connect(add_note)
+        button.clicked.connect(del_note)
+        button.clicked.connect(save_note)
     def add_note():
         with open('note.json', 'r') as file:
             data = json.load(data,file)
-            print(data)
     def show_note():
         name = list_notes.selectedItems()[0].text()
         field_text.setText(notes[name]['текст'])
